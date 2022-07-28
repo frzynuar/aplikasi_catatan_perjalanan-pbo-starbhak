@@ -13,16 +13,11 @@ class MuridController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    
-    public function home()
-    {
-        return view('home');
-    }
 
     public function index()
     {
         $dataMurid = Murid::all();
-        return view('Murid.data-murid',compact('dataMurid'));
+        return view('catatan',compact('dataMurid'));
     }
 
     /**
@@ -32,7 +27,7 @@ class MuridController extends Controller
      */
     public function create()
     {
-        return view('Murid.create');
+        return view('create');
     }
 
     /**
@@ -45,13 +40,13 @@ class MuridController extends Controller
     {
         // dd($request->all());
         Murid::create([
-            'nama' => $request->nama,
-            'jk' => $request->jk,
-            'umur' => $request->umur,
+            'tanggal' => $request->tanggal,
+            'waktu' => $request->waktu,
+            'lokasi' => $request->lokasi,
             'suhu' => $request->suhu
         ]);
 
-        return redirect('data-murid');
+        return redirect('catatan');
     }
 
     /**
@@ -71,11 +66,11 @@ class MuridController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        $murid = Murid::findorfail($id);
-        return view('Murid.edit-murid',compact('murid'));
-    }
+    // public function edit($id)
+    // {
+    //     $murid = Murid::findorfail($id);
+    //     return view('edit',compact('murid'));
+    // }
 
     /**
      * Update the specified resource in storage.
@@ -84,12 +79,12 @@ class MuridController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-        $murid = Murid::findorfail($id);
-        $murid->update($request->all());
-        return redirect('data-murid');
-    }
+    // public function update(Request $request, $id)
+    // {
+    //     $murid = Murid::findorfail($id);
+    //     $murid->update($request->all());
+    //     return redirect('data-murid');
+    // }
 
     /**
      * Remove the specified resource from storage.
@@ -97,10 +92,10 @@ class MuridController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        $murid = Murid::findorfail($id);
-        $murid->delete();
-        return back();
-    }
+    // public function destroy($id)
+    // {
+    //     $murid = Murid::findorfail($id);
+    //     $murid->delete();
+    //     return back();
+    // }
 }

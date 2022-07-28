@@ -7,9 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Murid extends Model
 {
-    protected $table = "murid";
-    protected $primarykey = "id";
-    protected $fillable = [
-        'id','nama','jk','umur','suhu'
-    ];
+    protected $guarded = [];
 }

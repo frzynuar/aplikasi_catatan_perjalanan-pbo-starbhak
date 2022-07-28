@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\MuridController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,5 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('user', [UserController::class, 'index'])->name('user');
     });
 });
+
+Route::get('/catatan_perjalanan', [MuridController::class, 'index']);
