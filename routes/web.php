@@ -20,6 +20,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/add', function () {
+    return view('add');
+});
+
 Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::post('/proses_login', [AuthController::class, 'proses_login'])->name('proses_login');
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
