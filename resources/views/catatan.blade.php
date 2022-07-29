@@ -27,20 +27,18 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($dataMurid as $item)
                             <tr>
-                                <th scope="row">{{ $loop->iteration }}</th>
-                                <td>{{ $item->tanggal }}</td>
-                                <td>{{ $item->waktu }}</td>
-                                <td>{{ $item->lokasi }}</td>
-                                <td>{{ $item->suhu }}</td>
+                                <th scope="row"></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                                                         
-                            @endforeach
                         </tbody>
                         
                     </table>
-                    <a href="{{ url('create') }}" class="btn btn-success">Isi Catatan Perjalanan</a>
+                    <a href="{{ url('add') }}" class="btn btn-success">Isi Catatan Perjalanan</a>
 
                 </div>
             </div>

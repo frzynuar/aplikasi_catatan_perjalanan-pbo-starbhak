@@ -36,7 +36,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <a href="{{ url('/catatan_perjalanan') }}" class="nav-link">Catatan Perjalanan</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="{{ url('/isi_data') }}" class="nav-link">Isi Data</a>
+                    <a href="{{ url('/add') }}" class="nav-link">Isi Data</a>
                 </li>
             </ul>
 
