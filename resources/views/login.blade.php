@@ -68,7 +68,7 @@
                                                 <input
                                                     class="form-control py-4"
                                                     id="inputPassword"
-                                                    type="text"
+                                                    type="password"
                                                     name="password"
                                                     placeholder="Masukkan Password"/>
                                                 @if($errors->has('password'))
