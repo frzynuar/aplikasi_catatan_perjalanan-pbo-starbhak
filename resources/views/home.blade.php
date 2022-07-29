@@ -9,7 +9,7 @@
                 <div class="card-body">
                     <h1>Selamat Datang Ahmad Ridho di aplikasi Peduli Diri</h1>
                     <div class="pull-right">
-                        <a class="btn btn-success mb-2" href="{{ url('add') }}"> Create New Guru</a>
+                        <a class="btn btn-success mb-2" href="{{ url('add') }}"> Create New Catatan</a>
                     </div>
                 </div>
             </div>

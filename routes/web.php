@@ -25,13 +25,6 @@ Route::get('/add', function () {
 });
 
 Route::get('/login', [AuthController::class, 'index'])->name('login');
-Route::post('/proses_login', [AuthController::class, 'proses_login'])->name('proses_login');
-Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
-
-Route::group(['middleware' => ['auth']], function () {
-    Route::group(['middleware' => ['cek_login:user']], function () {
-        Route::get('user', [UserController::class, 'index'])->name('user');
-    });
-});
+Route::get('/user', [UserController::class, 'index']);
 
 Route::get('/catatan_perjalanan', [MuridController::class, 'index']);
