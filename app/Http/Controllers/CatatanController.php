@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Catatan;
 use Illuminate\Http\Request;
-use App\Http\Resources\CatatanResource;
 
 
 class CatatanController extends Controller
@@ -17,11 +16,7 @@ class CatatanController extends Controller
 
     public function index()
     {
-        //get posts
-        $posts = Catatan::latest()->paginate(5);
-
-        //return collection of posts as a resource
-        return new CatatanResource(true, 'List Data Posts', $posts);
+        return view('catatan');
     }
 
     /**
