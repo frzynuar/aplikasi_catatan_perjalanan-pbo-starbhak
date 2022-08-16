@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Murid extends Model
 {
-    protected $guarded = [];
+    protected $fillable = [
+        'tanggal',
+        'waktu',
+        'lokasi',
+        'suhu'
+    ];
 }
