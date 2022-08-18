@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Murid;
+use App\Models\Catatan;
 use Illuminate\Http\Request;
 
 
-class MuridController extends Controller
+class CatatanController extends Controller
 {
     /**
      * Display a listing of the resource.

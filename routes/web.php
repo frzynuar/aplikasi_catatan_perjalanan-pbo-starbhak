@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\MuridController;
+use App\Http\Controllers\CatatanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,4 +27,4 @@ Route::get('/add', function () {
 Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::get('/user', [UserController::class, 'index']);
 
-Route::get('/catatan_perjalanan', [MuridController::class, 'index']);
+Route::get('/catatan_perjalanan', [CatatanController::class, 'index']);

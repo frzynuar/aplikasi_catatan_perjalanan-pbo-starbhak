@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('murids', function (Blueprint $table) {
+        Schema::create('catatans', function (Blueprint $table) {
             $table->id();
             $table->date('tanggal');
             $table->string('waktu');
