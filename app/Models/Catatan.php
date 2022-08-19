@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Catatan extends Model
 {
     protected $fillable = [
+        'nik',
+        'nama_lengkap',
         'tanggal',
         'waktu',
         'lokasi',

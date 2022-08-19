@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('catatans', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('nik');
+            $table->string('nik');
             $table->string('nama_lengkap');
             $table->date('tanggal');
-            $table->string('waktu');
+            $table->time('waktu');
             $table->string('lokasi');
             $table->string('suhu');
             $table->timestamps();
