@@ -1,5 +1,7 @@
 <?php
 
+// namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,3 +18,8 @@ use Illuminate\Support\Facades\Route;
 
 //posts
 Route::apiResource('/catatan', App\Http\Controllers\Api\CatatanController::class);
+
+/**
+ * route resource post
+ */
+// Route::resource('/catatan', CatatanController::class);
