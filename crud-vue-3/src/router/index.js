@@ -4,7 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 //define a routes
 const routes = [
     {
-        path: '/catatan-index',
+        path: '/',
         name: 'catatan.index',
         component: () => import( /* webpackChunkName: "catatan.index" */ '@/views/catatan/Index.vue')
     },
