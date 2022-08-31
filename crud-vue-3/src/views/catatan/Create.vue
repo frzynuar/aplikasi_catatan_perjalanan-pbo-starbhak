@@ -112,7 +112,7 @@ export default {
 
                 //redirect ke post index
                 router.push({
-                    name: 'catatan.index'
+                    name: 'Dashboard'
                 })
 
             }).catch(error => {
